@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="Tic Tac Toe/styles.css" />
+    <link
+      rel="stylesheet"
+      href="Tic Tac Toe/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container">
+    <center>
+      <h1 style="font-weight: bolder;">Welcome to the game of Tic-Tac-Toe!</h1>
+
+      <p>
+        Directions: The game is played on a grid that's 3 squares by 3 squares.
+        You are X and your friend is O. Players take turns clicking an empty box
+        to make their mark (X or O). The first player to get 3 of their marks in
+        a row (up, down, across, or diagonally) is the winner. If all 9 squares
+        are full and no one has 3 marks in a row, the game is a draw.
+      </p>
+
+      <h2 id="declare-turn" class="alert alert-secondary" style="color: black">
+        Player X begin!
+      </h2>
+      <div id="myDiv"></div>
+
+      <div id="boxes" class="row">
+           <div
+            id="box1"
+            class="col-4 play-box"
+            style="
+              border-right: 2px solid black;
+              border-bottom: 2px solid black;
+            "
+          ></div>
+          <div
+            id="box2"
+            class="col-4 play-box"
+            style="
+              border-right: 2px solid black;
+              border-bottom: 2px solid black;
+            "
+          ></div>
+          <div
+            id="box3"
+            class="col-4 play-box"
+            style="border-bottom: 2px solid black"
+          ></div>
+          <div
+            id="box4"
+            class="col-4 play-box"
+            style="
+              border-right: 2px solid black;
+              border-bottom: 2px solid black;
+            "
+          ></div>
+          <div
+            id="box5"
+            class="col-4 play-box"
+            style="
+              border-right: 2px solid black;
+              border-bottom: 2px solid black;
+            "
+          ></div>
+          <div
+            id="box6"
+            class="col-4 play-box"
+            style="border-bottom: 2px solid black"
+          ></div>
+          <div
+            id="box7"
+            class="col-4 play-box"
+            style="border-right: 2px solid black"
+          ></div>
+          <div
+            id="box8"
+            class="col-4 play-box"
+            style="border-right: 2px solid black"
+          ></div>
+          <div id="box9" class="col-4 play-box"></div>
+        </div>
+      </div>
+
+      <button id="restart" class="btn btn-rounded btn-lg btn-primary">
+        Restart
+      </button>
+    </center>
+    <script src="Tic Tac Toe/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="Tic Tac Toe/node_modules/canvas-confetti/dist/confetti.browser.js"></script>
+    <script src="Tic Tac Toe/app.js"></script>
+  </body>
+</html>
